@@ -503,6 +503,141 @@ footer a:hover{text-decoration:underline}
   </div>
 </section>
 
+<!-- Reference Section -->
+<section style="padding:24px;max-width:1200px;margin:0 auto">
+  <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:20px">
+    <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">CSS Anchor Positioning — Complete Property Reference</h3>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:12px">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border)">
+            <th style="text-align:left;padding:10px;color:var(--text-dim);font-size:11px;text-transform:uppercase">Property / Function</th>
+            <th style="text-align:left;padding:10px;color:var(--text-dim);font-size:11px;text-transform:uppercase">Values</th>
+            <th style="text-align:left;padding:10px;color:var(--text-dim);font-size:11px;text-transform:uppercase">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">anchor-name</code></td>
+            <td style="padding:10px;color:var(--text-dim)">none | &lt;dashed-ident&gt;+</td>
+            <td style="padding:10px;color:var(--text-dim)">Registers an element as a positioning anchor. Must use -- prefix.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">position-anchor</code></td>
+            <td style="padding:10px;color:var(--text-dim)">auto | &lt;dashed-ident&gt;</td>
+            <td style="padding:10px;color:var(--text-dim)">Sets the default anchor for a positioned element.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">anchor()</code></td>
+            <td style="padding:10px;color:var(--text-dim)">anchor(&lt;side&gt;, &lt;fallback&gt;?)</td>
+            <td style="padding:10px;color:var(--text-dim)">Returns the position of an anchor's edge. Sides: top, bottom, left, right, center, start, end.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">anchor-size()</code></td>
+            <td style="padding:10px;color:var(--text-dim)">anchor-size(width | height | block | inline)</td>
+            <td style="padding:10px;color:var(--text-dim)">Returns the size of the anchor element in a given dimension.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">position-area</code></td>
+            <td style="padding:10px;color:var(--text-dim)">&lt;block&gt; &lt;inline&gt;</td>
+            <td style="padding:10px;color:var(--text-dim)">Grid-based positioning: top/center/bottom x left/center/right.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">position-try-fallbacks</code></td>
+            <td style="padding:10px;color:var(--text-dim)">flip-block | flip-inline | flip-start | &lt;dashed-ident&gt;</td>
+            <td style="padding:10px;color:var(--text-dim)">Auto-flip when positioned element overflows viewport.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">position-try-order</code></td>
+            <td style="padding:10px;color:var(--text-dim)">normal | &lt;try-size&gt;</td>
+            <td style="padding:10px;color:var(--text-dim)">Determines the order in which fallback positions are tried.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:10px"><code style="color:var(--cyan)">position-visibility</code></td>
+            <td style="padding:10px;color:var(--text-dim)">always | anchors-visible | no-overflow</td>
+            <td style="padding:10px;color:var(--text-dim)">Controls visibility based on anchor visibility or overflow.</td>
+          </tr>
+          <tr>
+            <td style="padding:10px"><code style="color:var(--cyan)">@position-try</code></td>
+            <td style="padding:10px;color:var(--text-dim)">@position-try --name { ... }</td>
+            <td style="padding:10px;color:var(--text-dim)">Defines a named fallback position with custom positioning rules.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:20px">
+    <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">Popover API — Property Reference</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div>
+        <h4 style="font-size:13px;color:var(--accent);margin-bottom:12px">HTML Attributes</h4>
+        <div style="font-size:12px;color:var(--text-dim);line-height:2.2">
+          <div style="padding:6px 0;border-bottom:1px solid var(--border)"><code style="color:var(--cyan)">popover</code> or <code style="color:var(--cyan)">popover="auto"</code> — Auto-dismiss on outside click or Escape.</div>
+          <div style="padding:6px 0;border-bottom:1px solid var(--border)"><code style="color:var(--cyan)">popover="manual"</code> — Must be dismissed programmatically. No light dismiss.</div>
+          <div style="padding:6px 0;border-bottom:1px solid var(--border)"><code style="color:var(--cyan)">popovertarget="id"</code> — Links a button to toggle a popover by ID.</div>
+          <div style="padding:6px 0"><code style="color:var(--cyan)">popovertargetaction</code> — "toggle" (default), "show", or "hide".</div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:13px;color:var(--green);margin-bottom:12px">JavaScript API</h4>
+        <div style="font-size:12px;color:var(--text-dim);line-height:2.2">
+          <div style="padding:6px 0;border-bottom:1px solid var(--border)"><code style="color:var(--cyan)">element.showPopover()</code> — Opens the popover.</div>
+          <div style="padding:6px 0;border-bottom:1px solid var(--border)"><code style="color:var(--cyan)">element.hidePopover()</code> — Closes the popover.</div>
+          <div style="padding:6px 0;border-bottom:1px solid var(--border)"><code style="color:var(--cyan)">element.togglePopover()</code> — Toggles open/close state.</div>
+          <div style="padding:6px 0;border-bottom:1px solid var(--border)"><code style="color:var(--cyan)">'toggle'</code> event — Fires when popover opens or closes.</div>
+          <div style="padding:6px 0"><code style="color:var(--cyan)">'beforetoggle'</code> event — Fires before state change. Cancelable.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:20px">
+    <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">CSS Pseudo-elements for Popover</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+      <div style="padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius)">
+        <code style="color:var(--cyan);font-size:12px">::backdrop</code>
+        <p style="font-size:11px;color:var(--text-dim);margin-top:6px">Full-screen overlay behind top-layer elements. Style it for modal-like dimming.</p>
+      </div>
+      <div style="padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius)">
+        <code style="color:var(--cyan);font-size:12px">:popover-open</code>
+        <p style="font-size:11px;color:var(--text-dim);margin-top:6px">Matches when the popover is in the open state. Use for entry animations.</p>
+      </div>
+      <div style="padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius)">
+        <code style="color:var(--cyan);font-size:12px">@starting-style</code>
+        <p style="font-size:11px;color:var(--text-dim);margin-top:6px">Define initial styles for popover entry transitions. Enables CSS-only open animations.</p>
+      </div>
+    </div>
+  </div>
+  <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:20px">
+    <h3 style="font-size:15px;font-weight:600;margin-bottom:16px">Browser Support</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+      <div style="padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);text-align:center">
+        <strong style="color:var(--green);font-size:13px">Popover API</strong>
+        <p style="font-size:11px;color:var(--green);margin-top:4px">Baseline 2024</p>
+        <p style="font-size:10px;color:var(--text-dim)">Chrome 114, Firefox 125, Safari 17</p>
+      </div>
+      <div style="padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);text-align:center">
+        <strong style="color:var(--green);font-size:13px">CSS Anchor Positioning</strong>
+        <p style="font-size:11px;color:var(--yellow);margin-top:4px">Chrome 125+</p>
+        <p style="font-size:10px;color:var(--text-dim)">Firefox/Safari: not yet</p>
+      </div>
+      <div style="padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);text-align:center">
+        <strong style="color:var(--green);font-size:13px">position-area</strong>
+        <p style="font-size:11px;color:var(--yellow);margin-top:4px">Chrome 125+</p>
+        <p style="font-size:10px;color:var(--text-dim)">Renamed from inset-area</p>
+      </div>
+      <div style="padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);text-align:center">
+        <strong style="color:var(--green);font-size:13px">position-try-fallbacks</strong>
+        <p style="font-size:11px;color:var(--yellow);margin-top:4px">Chrome 125+</p>
+        <p style="font-size:10px;color:var(--text-dim)">Viewport-aware flipping</p>
+      </div>
+    </div>
+    <div style="margin-top:12px;padding:12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius)">
+      <h4 style="font-size:12px;color:var(--accent);margin-bottom:8px">Progressive Enhancement Pattern</h4>
+      <code style="font-size:12px;color:var(--cyan);line-height:2;display:block">/* Popover works everywhere (Baseline 2024) */<br>[popover] { /* base styles */ }<br><br>/* Anchor positioning: Chrome 125+ only */<br>@supports (anchor-name: --a) {<br>&nbsp;&nbsp;.tooltip {<br>&nbsp;&nbsp;&nbsp;&nbsp;position-anchor: --trigger;<br>&nbsp;&nbsp;&nbsp;&nbsp;top: anchor(bottom);<br>&nbsp;&nbsp;}<br>}<br><br>/* Fallback: use JS positioning libraries<br>&nbsp;&nbsp; like Floating UI for other browsers */</code>
+    </div>
+  </div>
+</section>
+
 <footer>
   <a href="https://yurukusa.github.io/dev-toolkit/">Dev Toolkit</a> — Popover Anchor Positioning Playground
 </footer>
